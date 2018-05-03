@@ -1,3 +1,4 @@
+
 var questions = [
 {
     question: "In rhyming slang, if someone said they we going to have a 'bo-peep', what they be doing?",
@@ -73,7 +74,7 @@ $(document).ready(function() {
 
     for(var j = 0; j < 4; j++) {
       var answerChoice = $('<li>');
-      var answerInput = $('<input type="radio" name="answers' + i+  '">' + questions[i].answers[j] + '</input>');
+      var answerInput = $('<input class="radbtn" type="radio" name="answers' + i+  '">' + questions[i].answers[j] + '</input>');
       answerInput.attr('choice', j);
       answerChoice.append(answerInput);
       choices.append(answerChoice);

@@ -1,19 +1,58 @@
-body, html {
+body {
     height: 100%;
+    background-image: url("http://www.istpd.com/assets/images/australia.jpg");
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+
 }
-
-
-
+/* Style the navbar */
+#navbar {
+    overflow: hidden;
+    background-color: #333;
+    width: 960px;
+    margin: 0 auto;
+    /* position: fixed;
+    top: 0; */
+  }
+  
+  /* Navbar links */
+  #navbar a {
+    float: left;
+    display: block;
+    color: #f2f2f2;
+    text-align: center;
+    padding: 14px;
+    text-decoration: none;
+  }
+  
+  /* Page content */
+  .content {
+    padding: 16px;
+  }
+  
+  /* The sticky class is added to the navbar with JS when it reaches its scroll position */
+  /* .sticky {
+    position: fixed;
+    top: 0;
+    width: 100%
+  } */
+  
+  /* Add some top padding to the page content to prevent sudden quick movement (as the navigation bar gets a new position at the top of the page (position:fixed and top:0) */
+  .sticky + .content {
+    padding-top: 60px;
+  }
 
 .container {
     width: 960px;
     margin: 0 auto;
     color: #F8F9FA;
-    background-color: rgba(56, 56, 56, 0.8);
+    background-color: rgba(56, 56, 56, 0.9);
 }
 
 .col{
-    background-color:rgba(56, 56, 56, 0.8);
+    background-color:rgba(56, 56, 56, 0.9);
     }
          
     
@@ -21,16 +60,13 @@ body, html {
     overflow: hidden; 
     }  
 
-.bg { 
- 
-    background-image: url("http://www.istpd.com/assets/images/australia-2x.jpg");
-    
-    /* Full height */
-    height: 200%;
-    background-position: center;
-    background-repeat: no-repeat;
-    background-size: cover;
-} 
+.question {
+    font-size: 20px;
+}
 
+.radbtn {
+    margin-right: 20px !important;
+    margin-top: 15px !important;
+}
 
 
