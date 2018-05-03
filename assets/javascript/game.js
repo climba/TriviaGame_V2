@@ -98,8 +98,6 @@ $(document).ready(function() {
       if(userChoice === questions[i].correctAnswer) {
         score++;
       }
-
-
     }
       console.log(score);
   });
