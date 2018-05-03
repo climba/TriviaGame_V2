@@ -67,8 +67,9 @@ $(document).ready(function() {
     questionStem = $('<p>');
     questionStem.addClass('question');
     questionStem.text(questions[i].question);
+    
 
-    var choices = $('<ul>');
+    var choices = $('<ul class="list-unstyled">');
 
     for(var j = 0; j < 4; j++) {
       var answerChoice = $('<li>');
@@ -78,6 +79,7 @@ $(document).ready(function() {
       choices.append(answerChoice);
 
     }
+    
 
     questionBox.append(questionStem);
     questionBox.append(choices);
