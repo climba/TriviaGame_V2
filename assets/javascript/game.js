@@ -59,6 +59,7 @@ var questions = [
     // Each quesiton set will be placed in a box with the question and answer options
     var questionBox;
     var questionStem;
+    var counter;
   
   
     // Loop through all the questions
@@ -108,6 +109,7 @@ var questions = [
   
     // Score the game
     function scoreGame() {
+      clearInterval(counter);
       // Create a variable called checkedInputs
       var checkedInputs = $('input:checked');
       // Set the score to zero at the start
@@ -119,6 +121,7 @@ var questions = [
         if(userChoice === questions[i].correctAnswer) {
           // Add a 1 to the score for each correct answer
           score++;
+          
         }
       }
         console.log(score);
@@ -126,11 +129,13 @@ var questions = [
       displayResults(score);
   
     }
+
+
   
     // Time the game
     function gameTimer() {
       // Set the time to this number
-      var count =30;
+      var count =35;
       // create a variable called timer with a value of a HTML id
       var timer = $("#timer");
       // Add the class counter to the timer HTML element
@@ -138,7 +143,7 @@ var questions = [
       // Injects the text value of the timer and starts as the page loads
       timer.text(count + " seconds left");
       // This counts down and displays the current count in the HTML element
-      var counter = setInterval(function(){ 
+      counter = setInterval(function(){ 
         // Tell the timer to countdown
         count--; 
         // Display the amount of time left and display on the HTML element timer
