@@ -2,7 +2,7 @@
 var questions = [
   {
       question: "In rhyming slang, if someone said they we going to have a 'bo-peep', what they be doing?",
-      answers: [ "Having a sleep", "Have a wee", "Drink some beer", "Cook a BBQ" ],
+      answers: [ "Having a sleep", "Have a wee", "Drink some beer","Cook a BBQ" ],
       correctAnswer: "0"
     },
     {
@@ -29,26 +29,6 @@ var questions = [
       question: "What was the name of Olivia Newton-John’s chain of clothing stores?",
       answers: [ "Xanadu", "Koala Blue", "Oliva", "Liv"],
       correctAnswer: "1"
-    },
-    {
-      question: "What famous beach is known for being in the final scene of point break?",
-      answers: ["Bells Beach", "Bedourie", "Byron Bay", "Beachlands"],
-      correctAnswer: "0"
-    },
-    {
-      question: "Which of the following is not an Australian innovation?",
-      answers: ["Chiko Roll", "Lawn Sprinkler", "Plastic bank notes", "Wine Cask"],
-      correctAnswer: "1"
-    },
-    {
-      question: "What creature does Jana Pittman have tattooed on her body?",
-      answers: [ "Scorpion", "Bee", "Dragon", "Owl" ],
-      correctAnswer: "1"
-    },
-    {
-      question: "What was australias highest grossing film",
-      answers: [ "Babe", "Happy Feet", "Crocodile Dundee", "Australia"],
-      correctAnswer: "2"
     }
   ];
   
@@ -130,7 +110,7 @@ var questions = [
     // Time the game
     function gameTimer() {
       // Set the time to this number
-      var count =30;
+      var count =20;
       // create a variable called timer with a value of a HTML id
       var timer = $("#timer");
       // Add the class counter to the timer HTML element
